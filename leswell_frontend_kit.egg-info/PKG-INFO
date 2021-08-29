@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: leswell-frontend-kit
+Version: 0.0.3
+Summary: Frontend solutions (simple js module loader, builtin modules, ...)
+Home-page: https://github.com/slevi123/leswell-frontend-kit
+Author: Leswell
+Author-email: simofilevente@gmail.com
+License: GPL
+Description: # leswell-frontend-kit
+        frontend solutions for myself.
+        
+        ### Installation
+        download it from Pypi
+        **link coming**
+        
+        ## javascript module loader
+        
+        _import rule in js files_:\
+        ` imports = [ "builtin-module", "submodule",... ] `\
+        **note:** _space is neccesary after `imports`_ keyword
+        
+        cli tool:\
+        `lesjs inputfile outputfolder`\
+        or\
+        `lesjs inputfile -o outputfile`
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: JavaScript
+Description-Content-Type: text/markdown

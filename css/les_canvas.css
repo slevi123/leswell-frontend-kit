@@ -1,0 +1,12 @@
+.test-canvas {
+  border: 8px solid salmon;
+  width: 100%;
+  height: 80%;
+}
+
+.responsive-canvas {
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=les_canvas.css.map */
