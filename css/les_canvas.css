@@ -1,7 +1,10 @@
 .test-canvas {
   border: 8px solid salmon;
+  border-width: 8px;
   width: 100%;
-  height: 80%;
+  max-width: 100vw;
+  max-height: 80vh;
+  padding: 0px;
 }
 
 .responsive-canvas {

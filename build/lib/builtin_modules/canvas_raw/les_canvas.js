@@ -118,30 +118,30 @@ class LesCanvas{
     }
 }
 
-window.onload = function bind(){
-    var canvas = new LesCanvas("testcanvas");
-    // let zold = canvas.fillRect(400, 200, 300, 150, color="green");
-    // zold.delete();
-    // canvas.fillRect(0, 10, 30, 15, color="red");
-    // canvas._2d_context.clearRect(0, 0, canvas.canvas.width, canvas.canvas.height);
-    // canvas.rect(0, 100, 300, 15, fill="yellow");
-    var button = document.getElementById("test_button");
-    var hossz = 0;
-    button.addEventListener("click", (event)=>{ hossz+=100;canvas.fillRect(hossz, 10, 30, 15, fill="red")})
-    gm = new GridManager(canvas, {cell_size: 30, grid_color: "red", show_grid:true});
-    // gm.fillCell(GridCell.get_cell(1,1));
-    gm.onCellClick(GridManager.alternateFillRect);
-    let texts = {font: "60px Arial"}
+// window.onload = function bind(){
+//     var canvas = new LesCanvas("testcanvas");
+//     // let zold = canvas.fillRect(400, 200, 300, 150, color="green");
+//     // zold.delete();
+//     // canvas.fillRect(0, 10, 30, 15, color="red");
+//     // canvas._2d_context.clearRect(0, 0, canvas.canvas.width, canvas.canvas.height);
+//     // canvas.rect(0, 100, 300, 15, fill="yellow");
+//     var button = document.getElementById("test_button");
+//     var hossz = 0;
+//     button.addEventListener("click", (event)=>{ hossz+=100;canvas.fillRect(hossz, 10, 30, 15, fill="red")})
+//     gm = new GridManager(canvas, {cell_size: 30, grid_color: "red", show_grid:true});
+//     // gm.fillCell(GridCell.get_cell(1,1));
+//     gm.onCellClick(GridManager.alternateFillRect);
+//     let texts = {font: "60px Arial"}
 
-    // canvas.fillText(100, 700, `border: ${canvas.borderWidth}`, texts);
-    clienttext = canvas.fillText(100, 100, "calc", texts);
-    // pagetext = canvas.fillText(100, 300, "page", texts);
-    // sitetext = canvas.fillText(100, 600, "site", texts);
+//     // canvas.fillText(100, 700, `border: ${canvas.borderWidth}`, texts);
+//     clienttext = canvas.fillText(100, 100, "calc", texts);
+//     // pagetext = canvas.fillText(100, 300, "page", texts);
+//     // sitetext = canvas.fillText(100, 600, "site", texts);
 
 
-    canvas.canvas.addEventListener("mousemove", (event)=>{
-        // console.log('.')
-        let [relX, relY] = canvas.get_mouse_position(event);
-        clienttext.text = `calc: ${relX}, ${relY}`;
-    });
-}
+//     canvas.canvas.addEventListener("mousemove", (event)=>{
+//         // console.log('.')
+//         let [relX, relY] = canvas.get_mouse_position(event);
+//         clienttext.text = `calc: ${relX}, ${relY}`;
+//     });
+// }

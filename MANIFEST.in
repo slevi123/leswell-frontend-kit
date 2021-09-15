@@ -1,2 +1,3 @@
 include builtin_modules/*.js
+include builtin_modules/*/*.js
 include css/scss/*.scss

@@ -2,10 +2,15 @@ MANIFEST.in
 README.md
 setup.py
 builtin_modules/__init__.py
-builtin_modules/les_canvas.js
+builtin_modules/_notification.js
+builtin_modules/_polyfills.js
+builtin_modules/canvas/les_canvas.js
+builtin_modules/canvas_raw/_items.js
+builtin_modules/canvas_raw/les_canvas.js
 css/__init__.py
 css/scss/__init__.py
 css/scss/_buttons.scss
+css/scss/les_canvas.scss
 jinja_extensions/__init__.py
 jinja_extensions/base_template.py
 lesjs/__init__.py
