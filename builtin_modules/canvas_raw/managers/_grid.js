@@ -1,4 +1,4 @@
-imports = ["managers/_base"]
+imports = ["canvas_raw/managers/_base"]
 
 class GridCell{
     static cells = {};

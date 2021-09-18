@@ -1,4 +1,4 @@
-imports = ["../_polyfills", "_items", "managers/_grid"]
+imports = ["../_polyfills", "_items"]
 
 class LesCanvas{
     constructor(id){

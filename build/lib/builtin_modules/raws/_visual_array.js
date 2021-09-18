@@ -1,13 +1,13 @@
-imports = ["_quick_promises", "canvas/les_canvas", "canvas_raw/managers/_array"]
+imports = ["_quick_promises", "canvas/les_canvas"]
 
 class VisualArray{
     constructor(canvas, minimum_item_width=5){
         this.canvas = canvas;
-        this.array_manager = new ArrayManager(canvas, {array_size: 10})
+        this.array_manager = ArrayManager(canvas)
 
         this.minimum_item_width = this.minimum_item_width;
 
-        // canvas.fillRect(0,0, 100, 100)
+        canvas.fillRect(0,0, 100, 100)
 
         this.target = [];
         this.proxy = new Proxy(this.target, {
@@ -37,16 +37,6 @@ window.onload = function(){
     let canvas = new LesCanvas("testcanvas");
     // console.log(canvas.canvas)
     let va = VisualArray.new(canvas);
-    // va[3] = 40;
-    // va[9] = 20;
-    // va[0] =10;
-    for (let i =1; i<=10;i++){
-        va[i-1] = i*5;
-    }
-    let testing = 2
-    document.getElementById("test_button").addEventListener("click", () => {
-        if (va[testing]) va[testing] = 0
-        else va[testing] = 60;
-    })
-    // console.log(va[3]);
+    va[3] = 4;
+    console.log(va[3]);
 }
