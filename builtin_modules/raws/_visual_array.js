@@ -31,22 +31,22 @@ class VisualArray{
 
 }
 
-window.onload = function(){
-    // let canvas = this.canvas = document.getElementById("testcanvas");
-    // console.log(canvas.getContext("2d"))
-    let canvas = new LesCanvas("testcanvas");
-    // console.log(canvas.canvas)
-    let va = VisualArray.new(canvas);
-    // va[3] = 40;
-    // va[9] = 20;
-    // va[0] =10;
-    for (let i =1; i<=10;i++){
-        va[i-1] = i*5;
-    }
-    let testing = 2
-    document.getElementById("test_button").addEventListener("click", () => {
-        if (va[testing]) va[testing] = 0
-        else va[testing] = 60;
-    })
-    // console.log(va[3]);
-}
+// window.onload = function(){
+//     // let canvas = this.canvas = document.getElementById("testcanvas");
+//     // console.log(canvas.getContext("2d"))
+//     let canvas = new LesCanvas("testcanvas");
+//     // console.log(canvas.canvas)
+//     let va = VisualArray.new(canvas);
+//     // va[3] = 40;
+//     // va[9] = 20;
+//     // va[0] =10;
+//     for (let i =1; i<=10;i++){
+//         va[i-1] = i*5;
+//     }
+//     let testing = 2
+//     document.getElementById("test_button").addEventListener("click", () => {
+//         if (va[testing]) va[testing] = 0
+//         else va[testing] = 60;
+//     })
+//     // console.log(va[3]);
+// }

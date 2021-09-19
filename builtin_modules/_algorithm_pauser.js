@@ -106,19 +106,19 @@ class AlgorithmPauser{
 
 }
 
-window.onload = function (){
-    let at = new AlgorithmPauser()
-    document.getElementById("start").addEventListener("click", () => at.start())
-    document.getElementById("pause_resume").addEventListener("click", () => at.pause_resume())
-    document.getElementById("stop").addEventListener("click", () => at.stop())
-    let checkbox_dom = document.getElementById("auto-sort");
-    checkbox_dom.addEventListener("change", () => {
-        if (checkbox_dom.checked) at.mode = "auto-sort"
-        else at.mode = "stepper";
-    })
+// window.onload = function (){
+//     let at = new AlgorithmPauser()
+//     document.getElementById("start").addEventListener("click", () => at.start())
+//     document.getElementById("pause_resume").addEventListener("click", () => at.pause_resume())
+//     document.getElementById("stop").addEventListener("click", () => at.stop())
+//     let checkbox_dom = document.getElementById("auto-sort");
+//     checkbox_dom.addEventListener("change", () => {
+//         if (checkbox_dom.checked) at.mode = "auto-sort"
+//         else at.mode = "stepper";
+//     })
 
-    let speed_select_dom = document.getElementById("speed");
-    speed_select_dom.addEventListener("change", () => at.wait_time = parseInt(speed_select_dom.value))
+//     let speed_select_dom = document.getElementById("speed");
+//     speed_select_dom.addEventListener("change", () => at.wait_time = parseInt(speed_select_dom.value))
     
-    document.getElementById("step").addEventListener("click", () => at.step())
-}
+//     document.getElementById("step").addEventListener("click", () => at.step())
+// }

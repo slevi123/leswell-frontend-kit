@@ -11,6 +11,10 @@ builtin_modules/_visual_array.js
 builtin_modules/canvas/les_canvas.js
 builtin_modules/canvas_raw/_items.js
 builtin_modules/canvas_raw/les_canvas.js
+builtin_modules/canvas_raw/managers/_array.js
+builtin_modules/canvas_raw/managers/_base.js
+builtin_modules/canvas_raw/managers/_gravity.js
+builtin_modules/canvas_raw/managers/_grid.js
 builtin_modules/raws/_algorithm_pauser.js
 builtin_modules/raws/_algorithm_timer.js
 builtin_modules/raws/_visual_array.js

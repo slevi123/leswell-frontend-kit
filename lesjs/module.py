@@ -150,10 +150,12 @@ def watch(inputfile, outputfile, extra_paths, minified):
                     print("Change detected: ", dependency.file_path.name)
                     change = True
                     break
-                if module.changed():
-                    change = True
-            if change:
+            if module.changed():
                 print("Change detected: ", module.file_path.name)
+                change = True
+
+            if change:
+                # print("Change detected: ", module.file_path.name)
                 Module.dependencies = []
                 module = Module(inputfile, extra_paths=extra_paths)
                 rendered_text = module.render_final(minified=minified)
